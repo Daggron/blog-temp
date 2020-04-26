@@ -17,4 +17,4 @@ Technologies used
 
 Hope you like this project
 
-Happy Programming :zap
+Happy Programming :zap: :fire:
