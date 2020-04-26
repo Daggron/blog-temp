@@ -1,0 +1,66 @@
+header {
+    width: 100vw;
+    background-color: rgb(26, 115, 232);
+    margin-top: 0;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 400px 200px;
+    grid-template-areas: "title links";
+    justify-content: center;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.title {
+    grid-area: title;
+    text-align: center;
+}
+
+.title h2 {
+    margin: 0;
+    color: #fff;
+}
+
+.nav-links {
+    grid-area: links;
+    margin-right: 20px;
+    grid-template-columns: 200px;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+}
+
+.nav-links ul li a:hover {
+    color: #e6891d;
+}
+
+
+@media (max-width: 900px) {
+    nav {
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 50px 50px;
+        grid-template-areas: "title" "links";
+        justify-content: center;
+    }
+
+    .title {
+        grid-area: title;
+        text-align: center;
+    }
+
+    .nav-links {
+        grid-area: links;
+    }  
+}
