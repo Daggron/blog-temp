@@ -1,0 +1,122 @@
+@import url('./nav.css');
+@import url('./footer.css');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap');
+
+
+html,body {
+    margin: 0;
+    padding: 0;
+    background-color: #fcfcfe;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+
+.blue {
+    color: #1439b3;
+}
+
+#blog-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-content {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: "about blog";
+    justify-content: center;
+    align-items: center;
+}
+
+.author {
+    grid-area: about;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.author img {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+}
+
+.meta-author {
+    width: 100%;
+    text-align: center;
+    color: #444;
+}
+
+.post {
+    grid-area: blog;
+}
+
+.post img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.description {
+    width: 70vw;
+    text-align: left;
+    margin: 20px;
+}
+
+.description p {
+    font-size: 20px;
+    color: #444;
+    line-height: 1.69;
+    letter-spacing: normal;
+}
+
+.heading {
+    font-size: 35px;
+    text-align: center;
+    color: #1439b3;
+}
+
+.blog-meta {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+@media (max-width: 900px) {
+    .main-content {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 400px 400px;
+        grid-template-areas: "blog" "about";
+        justify-content: center;
+        align-items: center;
+    }
+    .post {
+        grid-area: blog;
+        justify-content: center;
+    }
+
+    .post img {
+        height: 400px;
+        width: 100%;
+    }
+
+    .author {
+        grid-area: about;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .description {
+        width: 90%;
+        text-align: left;
+        margin: 20px;
+    }
+}
