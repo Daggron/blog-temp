@@ -18,3 +18,5 @@ Technologies used
 Hope you like this project
 
 Happy Programming :zap: :fire:
+
+Udacity review link [click here](https://review.udacity.com/#!/reviews/2222917)
